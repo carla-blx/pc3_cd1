@@ -51,7 +51,7 @@ st.markdown("""
 /* Para modo oscuro de Streamlit Cloud */
 @media (prefers-color-scheme: dark) {
     .stProgress > div > div {
-        background-color: #404040 !important;
+        background-color: #F5F5F5 !important;
     }
     .stProgress > div > div > div > div {
         background: linear-gradient(90deg, #4caf50, #66bb6a) !important;
