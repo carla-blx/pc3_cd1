@@ -135,37 +135,6 @@ except Exception as e:
     st.info("Por favor, asegúrate de que el archivo 'modelo_cnn_scratch_final.pth' existe en el directorio actual.")
     st.stop()
 
-# ===========================================
-# SIDEBAR - INFORMACIÓN
-# ============================================
-with st.sidebar:
-    st.markdown("## ℹ️ Información")
-    st.markdown("---")
-    st.markdown("### 📊 Dataset")
-    st.markdown("""
-    - **Nombre:** PlantVillage
-    - **Clases:** 38 enfermedades/estados
-    - **Cultivos:** Tomate, Papa, Manzana, etc.
-    """)
-    
-    st.markdown("---")
-    st.markdown("### 🧠 Modelo")
-    st.markdown("""
-    - **Arquitectura:** CNN desde cero
-    - **Capas:** 4 bloques convolucionales
-    - **Tamaño entrada:** 128x128
-    - **Técnica:** Grad-CAM para interpretabilidad
-    """)
-    
-    st.markdown("---")
-    st.markdown("### 📖 Instrucciones")
-    st.markdown("""
-    1. Haz clic en 'Browse files'
-    2. Selecciona una imagen de hoja
-    3. Espera el resultado
-    4. Visualiza las áreas de interés
-    """)
-
 # ============================================
 # INTERFAZ PRINCIPAL
 # ============================================
@@ -284,15 +253,6 @@ else:
         - Hojas de manzana con costra
         - Hojas de maíz con roya
         - Cualquier hoja de cultivo agrícola
-        """)
-        
-        st.markdown("### 📸 Dataset PlantVillage")
-        st.markdown("""
-        El modelo fue entrenado con el dataset PlantVillage que contiene:
-        - 38 categorías diferentes
-        - Más de 50,000 imágenes de hojas
-        - Cultivos como: Tomate, Papa, Manzana, Uva, Fresa, etc.
-        - Enfermedades comunes: Tizón temprano/tardío, Roya, Mildiu, etc.
         """)
 
 # ============================================
