@@ -1,0 +1,135 @@
+/* assets/style.css - Versión mejorada para Streamlit */
+
+/* Estilos generales */
+.stApp {
+    background-color: #f5f9f0;
+}
+
+/* Título principal */
+.main-header {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1B5E20;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 20px;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-radius: 15px;
+    border-left: 5px solid #2E7D32;
+    border-right: 5px solid #2E7D32;
+}
+
+/* Subtítulos */
+.stSubheader {
+    color: #2e7d32 !important;
+    font-weight: 600 !important;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+[data-testid="stSidebar"] .stMarkdown {
+    color: #1b5e20;
+}
+
+/* Botones */
+.stButton > button {
+    background-color: #2E7D32 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 0.5rem 1rem !important;
+    font-weight: bold !important;
+    transition: all 0.3s !important;
+}
+
+.stButton > button:hover {
+    background-color: #1B5E20 !important;
+    transform: scale(1.02) !important;
+    color: white !important;
+}
+
+/* Barra de progreso */
+.stProgress > div > div > div > div {
+    background-color: #4caf50 !important;
+}
+
+/* Tarjeta de predicción */
+.prediction-box {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-left: 5px solid #2E7D32;
+    padding: 1.2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 10px 0;
+}
+
+/* Alertas */
+.stAlert {
+    border-radius: 10px !important;
+    border-left: 4px solid #2E7D32 !important;
+}
+
+/* Imágenes */
+.stImage {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Pie de página */
+footer {
+    font-size: 0.8rem;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #c8e6c9;
+}
+
+/* Contenedor principal */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Tarjetas de resultado */
+.result-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    border: 1px solid #c8e6c9;
+}
+
+/* Métricas */
+[data-testid="stMetric"] {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+[data-testid="stMetric"] label {
+    color: #2e7d32 !important;
+    font-weight: 600;
+}
+
+/* Selectores de Streamlit específicos */
+.css-1d391kg {
+    background-color: #e8f5e9;
+    border-radius: 10px;
+}
+
+.css-163ttbj {
+    color: #1b5e20;
+}
+
+.st-bb {
+    background-color: #2E7D32;
+}
