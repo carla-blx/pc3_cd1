@@ -297,6 +297,5 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666; padding: 20px;'>
     <b>Desarrollado con:</b> PyTorch, Streamlit, Grad-CAM<br>
-    <b>Dataset:</b> PlantVillage | <b>Versión:</b> 1.0.0
 </div>
 """, unsafe_allow_html=True)
