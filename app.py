@@ -30,6 +30,41 @@ st.set_page_config(
 # CSS personalizado
 st.markdown("""
 <style>
+/* Forzar colores de barras de progreso en todos los temas */
+.stProgress > div > div {
+    background-color: #e0e0e0 !important;
+    border-radius: 10px !important;
+}
+
+/* Color de la barra de progreso (verde) */
+.stProgress > div > div > div > div {
+    background: #1F8FF2 !important;
+    border-radius: 10px !important;
+}
+
+/* Color del texto del porcentaje */
+.stProgress + div {
+    color: #1b1b1b !important;
+    font-weight: bold !important;
+}
+
+/* Para modo oscuro de Streamlit Cloud */
+@media (prefers-color-scheme: dark) {
+    .stProgress > div > div {
+        background-color: #404040 !important;
+    }
+    .stProgress > div > div > div > div {
+        background: linear-gradient(90deg, #4caf50, #66bb6a) !important;
+    }
+    .stProgress + div {
+        color: #ffffff !important;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
 :root {
     --primary: #2e7d32;
     --secondary: #66bb6a;
